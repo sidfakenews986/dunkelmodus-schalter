@@ -1,13 +1,13 @@
 class Dunkelmodus {
     constructor() {
-        this.isDarkMode = localStorage.getItem('dunkelmodus') === 'true';
+        this.isDarkMode = localStorage.getItem('darkMode') === 'true';
         this.toggle(); // Set initial mode based on local storage
         this.applyStyles();
     }
 
     toggle() {
         this.isDarkMode = !this.isDarkMode;
-        localStorage.setItem('dunkelmodus', this.isDarkMode);
+        localStorage.setItem('darkMode', this.isDarkMode);
         this.applyStyles();
     }
 
